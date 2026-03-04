@@ -9,6 +9,7 @@ import Administration from "./pages/Administration";
 import Academics from "./pages/Academics";
 import Results from "./pages/Results";
 import Contact from "./pages/Contact";
+import StudentVerify from "./pages/StudentVerify";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/academics" element={<Academics />} />
           <Route path="/results" element={<Results />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/student-verify" element={<StudentVerify />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

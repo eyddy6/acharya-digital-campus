@@ -5,11 +5,11 @@ import vcPhoto from "@/assets/vc-photo.jpg";
 const officers = [
   {
     id: "vc",
-    name: "Prof. Raja Sekhar P.",
-    title: "Vice-Chancellor",
+    name: "Prof. Kancharla Gangadhara Rao",
+    title: "Vice-Chancellor (I/c)",
     photo: vcPhoto,
     description:
-      "Prof. Raja Sekhar P. assumed charge as Vice-Chancellor of Acharya Nagarjuna University. An eminent academician and researcher, he has published over 150 research papers in national and international journals.",
+      "It is a matter of privilege to be steering Acharya Nagarjuna University with the academic impulse to establish everything in Truth - \"Satye Sarvam Pratishitam.\" An eminent academician and researcher dedicated to illuminating students and scholars.",
   },
   {
     id: "registrar",

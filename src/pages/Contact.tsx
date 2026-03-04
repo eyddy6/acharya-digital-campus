@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Mail, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -23,17 +23,10 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex gap-3">
-                <Phone className="text-primary shrink-0" size={20} />
-                <div>
-                  <h3 className="font-bold text-foreground">Phone</h3>
-                  <p className="text-sm text-muted-foreground">0863-2293299, 2293356</p>
-                </div>
-              </div>
-              <div className="flex gap-3">
                 <Mail className="text-primary shrink-0" size={20} />
                 <div>
                   <h3 className="font-bold text-foreground">Email</h3>
-                  <p className="text-sm text-muted-foreground">registrar@anu.ac.in</p>
+                  <p className="text-sm text-muted-foreground">registrar@anueducation.in</p>
                 </div>
               </div>
               <div className="flex gap-3">
@@ -43,30 +36,6 @@ const Contact = () => {
                   <p className="text-sm text-muted-foreground">Monday - Saturday: 10:00 AM - 5:00 PM</p>
                 </div>
               </div>
-            </div>
-
-            <h2 className="anu-section-title mt-8">Important Contact Numbers</h2>
-            <div className="anu-card overflow-hidden">
-              <table className="w-full text-sm">
-                <thead className="bg-primary text-primary-foreground">
-                  <tr><th className="p-3 text-left">Department</th><th className="p-3 text-left">Phone</th></tr>
-                </thead>
-                <tbody>
-                  {[
-                    ["Vice-Chancellor Office", "0863-2293208"],
-                    ["Registrar Office", "0863-2293299"],
-                    ["Controller of Examinations", "0863-2293150"],
-                    ["Admissions", "0863-2293120"],
-                    ["ANUCDE", "0863-2293208"],
-                    ["Library", "0863-2293283"],
-                  ].map(([dept, phone], i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-muted/50" : "bg-background"}>
-                      <td className="p-3 text-foreground">{dept}</td>
-                      <td className="p-3 text-muted-foreground">{phone}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
             </div>
           </div>
 
