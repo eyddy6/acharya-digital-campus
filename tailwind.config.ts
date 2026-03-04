@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+        telugu: ['Noto Sans Telugu', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +50,17 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        anu: {
+          maroon: "hsl(var(--anu-maroon))",
+          red: "hsl(var(--anu-red))",
+          gold: "hsl(var(--anu-gold))",
+          dark: "hsl(var(--anu-dark))",
+          green: "hsl(var(--anu-green))",
+          nav: "hsl(var(--anu-nav-bg))",
+          news: "hsl(var(--anu-news-bg))",
+          footer: "hsl(var(--anu-footer-bg))",
+          "footer-fg": "hsl(var(--anu-footer-fg))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
