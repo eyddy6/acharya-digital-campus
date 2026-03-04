@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import anuLogo from "@/assets/anu-logo.png";
+import azadiImg from "@/assets/azadi-mahotsav.png";
 import { Link } from "react-router-dom";
 
 const navItems = [
@@ -37,11 +38,7 @@ const navItems = [
       { label: "Library", href: "/academics#library" },
     ],
   },
-  { label: "Affiliated Colleges", href: "/affiliated-colleges" },
-  { label: "Results", href: "/results" },
-  { label: "ANUCDE", href: "/anucde" },
-  { label: "Sports", href: "/sports" },
-  { label: "Downloads", href: "/downloads" },
+  { label: "Student Verify", href: "/student-verify" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -68,15 +65,8 @@ const Header = () => {
               </p>
             </div>
           </Link>
-          <div className="hidden lg:flex items-center gap-3">
-            <div className="flex flex-col items-center">
-              <div className="w-10 h-10 rounded-full bg-anu-gold/20 flex items-center justify-center text-xs font-bold text-secondary-foreground">ISO</div>
-              <span className="text-[10px] text-muted-foreground">9001:2015</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-10 h-10 rounded-full bg-anu-green/20 flex items-center justify-center text-xs font-bold text-foreground">NAAC</div>
-              <span className="text-[10px] text-muted-foreground">'A' Grade</span>
-            </div>
+          <div className="hidden lg:flex items-center">
+            <img src={azadiImg} alt="Azadi Ka Amrit Mahotsav" className="h-16 object-contain" />
           </div>
         </div>
       </div>
@@ -158,12 +148,6 @@ const Header = () => {
           </span>
           <span className="anu-marquee-item text-sm text-anu-maroon font-medium">
             📢 Applications invited for UG/PG Admissions 2025-26
-          </span>
-          <span className="anu-marquee-item text-sm text-anu-maroon font-medium">
-            📢 M.Phil. Part-1/ Pre.Ph.D-2025 Exams Notification
-          </span>
-          <span className="anu-marquee-item text-sm text-anu-maroon font-medium">
-            📢 Advertisement for Research Project Fellowship
           </span>
         </div>
       </div>
